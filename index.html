@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="navbar">
+    <div class="titulo">Catálogo</div>
+    <button class="ver-carrito" onclick="toggleCarrito()">Ver Pedido 🛒</button>
+</div>
+<br/>
+
+
+<div class="banner">¡Bienvenido al Catálogo!</div>
+
+
+<div class="banner-secundario">Puedes pedir los productos copiando el mensaje del carrito o haciendo una captura de pantalla del mismo.</div>
+
+
+
+<div class="catalogo">
+
+    <div class="card">
+        <img src="images/espejodoble.png" alt="Producto 1"  onclick="abrirImagen(this.src)">
+        <h3>Espejo Doble</h3>
+        <p>Espejo doble de mano tiene un lado con más aumento</p>
+        <select id="color">
+            <option>Sirena</option>
+            <option>Cielo</option>
+        </select>
+        <h4>$2000</h4>
+        <button onclick="agregarAlCarrito(this)">Agregar</button>
+    </div>
+
+    <div class="card">
+        <img src="images/espejosimplesanrio.png" alt="Producto 1"  onclick="abrirImagen(this.src)">
+        <h3>Espejo Simple</h3>
+        <p>Espejo Personajes</p>
+        <select id="color">
+            <option>Kuromi</option>
+            <option>Pompompurin</option>
+            <option>cinnamoroll</option>
+            <option>My Melody</option>
+        </select>
+        <h4>$1000</h4>
+        <button onclick="agregarAlCarrito(this)">Agregar</button>
+    </div>
+
+
+    <div class="card">
+        <img src="images/hebillagatitos.png" alt="Producto 1"  onclick="abrirImagen(this.src)">
+        <h3>Hebilla Gatitos</h3>
+        <p>Hebilla infantil con resorte</p>
+        <select id="color">
+            <option>rosa</option>
+            <option>Amarillo</option>
+        </select>
+        <h4>$1000</h4>
+        <button onclick="agregarAlCarrito(this)">Agregar</button>
+    </div>
+
+    <div class="card">
+        <img src="images/hebillasgrandesdoble.png" alt="Producto 1"  onclick="abrirImagen(this.src)">
+        <h3>Hebillas grandes</h3>
+        <p>Hebillas x2</p>
+        <select id="color">
+            <option>Blanco (1)</option>
+            <option>Rosa (2)</option>
+            <option>Gris (3)</option>
+            <option>Blanco (4)</option>
+        </select>
+        <h4>$2000</h4>
+        <button onclick="agregarAlCarrito(this)">Agregar</button>
+    </div>
+
+
+
+
+
+    <div class="card">
+        <img src="images/cinnamoroll.png" alt="cinnamoroll"   onclick="abrirImagen(this.src)">
+        <h3>Llavero Cinnamoroll</h3>
+        <p>Llavero 10-12cm aprox</p>
+        <h4>$5000</h4>
+        <button onclick="agregarAlCarrito(this)">Agregar</button>
+    </div>
+
+    <div class="card">
+        <img src="images/kuromi.png" alt="kuromi">
+        <h3>Llavero Kuromi</h3>
+        <p>Llavero sanrio peluche</p>
+        <h4>$5000</h4>
+        <button onclick="agregarAlCarrito(this)">Agregar</button>
+    </div>
+
+    <div class="card">
+        <img src="images/mymelody.png" alt="kuromi">
+        <h3>Llavero My Melody</h3>
+        <p>Llavero sanrio peluche</p>
+        <h4>$5000</h4>
+        <button onclick="agregarAlCarrito(this)">Agregar</button>
+    </div>
+
+
+
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;">
+    <span onclick="cerrarModal()" style="position:absolute; top:20px; right:30px; font-size:30px; color:white; cursor:pointer;">✖️</span>
+    <img id="imagen-modal" src="" style="max-width:90%; max-height:90%;">
+</div>
+
+
+<div class="carrito" id="carrito">
+    <h4>Tu Pedido</h4>
+    <ul id="lista-carrito"></ul>
+    <div class="total" id="total-carrito">Total: $0</div>
+    <button class="copiar-btn" onclick="copiarPedido()">Copiar Pedido</button>
+</div>
+
+</body>
+</html>

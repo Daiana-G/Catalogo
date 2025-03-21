@@ -1,0 +1,181 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f6f1;
+    color: #333;
+}
+
+
+.banner {
+    background-color: #a67842;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+
+.banner-secundario {
+    background-color: #f8f8f8;
+    color:#a67842;
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #a67842; 
+}
+
+.ver-carrito {
+    background-color: transparent;
+    border: 1px solid #a67842;
+    color: #a67842;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 30px; 
+}
+
+.ver-carrito:hover {
+    background-color: #a67842;
+    color: #fff;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 10px 20px 10px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #e0dcd3;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 220px;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit:cover;
+}
+
+.card h3 {
+    font-size: 1em;
+    color: #a67842;
+    margin: 5px 0;
+}
+
+.card p {
+    font-size: 0.9em;
+    margin: 5px;
+}
+
+.card select {
+    width: 80%;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 0.8em;
+}
+
+.card button {
+    background-color: #a67842;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.carrito {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    width: 250px;
+    background-color: #fff;
+    border: 1px solid #e0dcd3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 3;
+    display: none;
+}
+
+.carrito h4 {
+    margin-top: 0;
+    color: #a67842;
+}
+
+.copiar-btn {
+    background-color: #a67842;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+
+.eliminar-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+}
+
+.eliminar-btn:hover {
+    background-color: #c0392b;
+}
+
+
+
+
+
+
+
